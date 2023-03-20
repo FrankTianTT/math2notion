@@ -12,7 +12,7 @@ from notion_client import Client
 class InlineEquation(SpanToken):
     parse_inner = False
     parse_group = 1
-    pattern = re.compile(r"[^$]\$([^\n$]+?)\$[^$]")
+    pattern = re.compile(r"(?<!$)\$([^\n$]+?)\$(?!$)")
 
 
 class Equation(SpanToken):
