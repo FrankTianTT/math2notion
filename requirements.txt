@@ -1,0 +1,2 @@
+pypandoc~=1.11
+mistletoe~=1.0.1
